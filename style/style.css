@@ -1,0 +1,214 @@
+* {
+    margin:0;
+    padding:0;
+}
+ul, ol, li{
+    list-style:none;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Spoqa Han Sans Neo', 'Black Ops One', sans-serif, cursive;
+}
+.hidden {
+    display:none;
+}
+
+/* weather */
+.weather{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    min-height:200px;
+}
+.weatherCity{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    padding:12px 16px;
+    color:#fff;
+}
+.weatherCity span{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-size:16px;
+}
+
+/* clock */
+.clock{
+    font-family: 'Black Ops One', cursive;
+    display:flex;
+    min-height:200px;
+    justify-content:center;
+    font-size:130px;
+    font-weight:300;
+    color:#fff;
+}
+
+/* greeting */
+.greeting{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.greeting .nameInput{
+    width:390px;
+    text-align:center;
+    font-size:40px;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+}
+.greeting .nameInput::placeholder{
+    color:#ffe318;
+}
+.greeting .nameInput:focus::placeholder{
+    color:#fff;
+    transition: 0.4s ease-in-out;
+}
+.greeting .addName{
+    font-size:43px;
+    color:#fff;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+
+/* todoList */
+.todoList{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.todoList .todoInput{
+    width:390px;
+    font-size:25px;
+    text-align:center;
+    color:#fff;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    border-bottom:3px solid rgb(242, 243, 237);
+    padding:5px 0;
+    margin-top:20px;
+}
+.todoList .todoInput::placeholder{
+    color:#fdc7d9;
+}
+.todoList .todo{
+    padding-top:16px;
+}
+.todoList .todo li{
+    padding:3px 0;
+}
+.todoList .todo li span{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-size:16px;
+    font-weight:400;
+    color:#fff;
+}
+.todoList .todo li button{
+    margin-right:5px;
+    border-radius:2px;
+}
+
+/* quote */
+.quote{
+    display: flex;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:0 0 15px 20px;
+    color:#ffffe6;
+}
+.quote span:first-child{
+    margin-right:10px;
+    font-weight:500;
+    font-size:16px;
+}
+.quote span:last-child{
+    font-weight:400;
+    font-size:16px;
+}
+
+/* bg */
+.bg{
+    position:absolute;
+    width:100vw;
+    height:100%;
+    top:0;
+    left:0;
+    object-fit:cover;
+    z-index:-1;
+}
+
+/* viewport */
+@media screen and (max-width:768px){
+    /* reset CSS */
+
+    /* weather */
+    .weather{
+        min-height:80px;
+    }
+    .weatherCity{
+        padding:6px 8px;
+    }
+    .weatherCity span{
+        font-size:8px;
+    }
+
+    /* clock */
+    .clock{
+        min-height:100px;
+        justify-content:center;
+        font-size:80px;
+    }
+
+    /* greeting */
+    .greeting .nameInput{
+        font-size:20px;
+    }
+    .greeting .addName{
+        font-size:21px;
+        color:#fff;
+        font-family: 'Black Ops One', cursive;
+    }
+
+    /* todoList */
+    .todoList .todoInput{
+        width:195px;
+        font-size:15px;
+        margin-top:15px;
+    }
+    .todoList .todo{
+        padding-top:8px;
+    }
+    .todoList .todo li span{
+        font-size:10px;
+    }
+    .todoList .todo li button{
+        font-size:9px;
+        width:18px;
+        height:18px;
+    }
+    
+    /* quote */
+    .quote{
+        padding:0 0 8px 10px;
+    }
+    .quote span:first-child{
+        width:190px;
+        margin-right:25px;
+        font-weight:500;
+        font-size:6px;
+    }
+    .quote span:last-child{
+        width:80px;
+        font-weight:400;
+        font-size:6px;
+    }
+    
+    /* bg */
+    .bg{
+        width:100%;
+        height:100vh;
+    }
+}
