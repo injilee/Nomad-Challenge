@@ -1,7 +1,8 @@
 # Nomad Challenge
  This is Graduation assignment <br/>
  
-👍https://injilee.github.io👍
+👇 view site 👇
+https://injilee.github.io/Nomad-Challenge
 
 # To do list
 <li>Live Clock</li>
